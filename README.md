@@ -58,7 +58,7 @@ than [Docker Desktop](https://www.docker.com/products/docker-desktop) on
 Windows and Mac, and [Docker Compose](https://docs.docker.com/compose/install/)
 on Linux.
 
-1. Build the docker image 
+1. Build the docker image
 
    ```bash
    docker-compose build

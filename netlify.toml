@@ -1,0 +1,17 @@
+[build.environment]
+  RUBY_VERSION = "2.7.1"
+
+[build]
+  command = "npm run build"
+  publish = "public" 
+
+[context.deploy-preview]
+  command = "npm run build:preview"
+  publish = "public"
+  
+
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+
+  [plugins.inputs]
+  buildDir = "public"
